@@ -36,7 +36,7 @@ workbox.routing.registerRoute(
   new workbox.strategies.StaleWhileRevalidate()
 );
 workbox.routing.registerRoute(
-  new RegExp('https://pp-pixel.github.io/clock3/manifest.json'),
+  new RegExp('https://pp-pixel.github.io/clock5-pro/manifest.json'),
   new workbox.strategies.StaleWhileRevalidate()
 );
 
