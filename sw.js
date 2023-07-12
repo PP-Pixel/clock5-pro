@@ -29,6 +29,10 @@ workbox.routing.registerRoute(
   new RegExp('index.html'),
   new workbox.strategies.NetworkFirst()
 );
+workbox.routing.registerRoute(
+  new RegExp('saved_resource.html'),
+  new workbox.strategies.NetworkFirst()
+);
 
 // manifest
 workbox.routing.registerRoute(
