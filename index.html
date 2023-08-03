@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="ja"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex">
-    
+<html lang="ja">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex">
+
     <title>Clock v5</title>
     <meta name="author" content="PP">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
     <meta name="keywords" content="アプリ,時計,ツール,時間">
     <meta name="description" content="ブラウザで動くシンプルなデジタル時計です。PCやスマホなど様々なデバイスで利用できます。コピー品ですが、よりシンプルに時計だけが表示できるようにしました。">
-    
+
     <!--NewFont-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <!--NoCache
     <meta http-equiv="Pragma" content="no-cache" />
@@ -24,14 +28,15 @@
     <meta property="og:image" content="./TIME.ico">
     <meta property="og:site_name" content="Clock v5">
     <!-- ServiceWorker -->
-<script>
-	if ("serviceWorker" in navigator) {
-	window.addEventListener("load", function () {
-	navigator.serviceWorker.register("./sw.js").then(
-	function (registration) {/* Registration was successful*/console.log("ServiceWorker registration successful with scope: ",registration.scope);},
-	function (err) {/* registration failed :(*/console.log("ServiceWorker registration failed: ", err);});});
-	}
-</script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker.register("./sw.js").then(
+                    function (registration) {/* Registration was successful*/console.log("ServiceWorker registration successful with scope: ", registration.scope); },
+                    function (err) {/* registration failed :(*/console.log("ServiceWorker registration failed: ", err); });
+            });
+        }
+    </script>
     <!--Manifest-->
     <link rel="manifest" href="https://pp-pixel.github.io/clock5-pro/manifest.json">
     <link rel="canonical" href="https://pp-pixel.github.io/">
@@ -71,12 +76,12 @@
         <span id="clock_date">20XX/XX/XX (XXX)</span>
     </div>
 
-<div class="wrapper">
+    <div class="wrapper">
         <input id="customBox" class="customBox" type="checkbox">
 
 
 
-<!--
+        <!--
         <div class="three icon-cog" title="テーマを設定する" id="changeMode">
             <a href="https://clock.shirokuma-lab.com/#settings" onclick="$(&#39;.drawer&#39;).drawer(&#39;close&#39;);">
             </a>
@@ -114,13 +119,20 @@
             <a href="https://clock.shirokuma-lab.com/#close_settings" class="close-btn">閉じる</a>
         </div>
     </div>-->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener("load", function() {
-                navigator.serviceWorker.register('sw.js?v.1.1');
-            });
-        }
-    </script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker.register('sw.js?v.1.1');
+                });
+            }
+        </script>
 
 
-<iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div></body></html>
+        <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"
+            src="./saved_resource.html"></iframe>
+        <div id="GOOGLE_INPUT_CHEXT_FLAG" input=""
+            input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"
+            style="display: none;"></div>
+</body>
+
+</html>

@@ -6,14 +6,14 @@ workbox.core.clientsClaim();
 
 workbox.navigationPreload.enable();
 
-self.addEventListener('install', function(e) {
-    console.log('[ServiceWorker] Install');
-  });
-  
-  self.addEventListener('activate', function(e) {
-    console.log('[ServiceWorker] Activate');
-  });
-  
+self.addEventListener('install', function (e) {
+  console.log('[ServiceWorker] Install');
+});
+
+self.addEventListener('activate', function (e) {
+  console.log('[ServiceWorker] Activate');
+});
+
 // ------------------  runtime caching starts ---------------------
 // frequently updated resources
 workbox.routing.registerRoute(
@@ -45,21 +45,21 @@ workbox.routing.registerRoute(
 );
 
 // ------------------  precaching the assets ---------------------
-  const OFFLINE_PAGE = 'index.html';
-  workbox.precaching.precacheAndRoute([
-    //icon,ogp
-    'TIME.ico',
-    'icon-192.png',
-    'icon-256.png',
-    //css
-    'style.css',
-    'index.css',
-    //javaScript
-    'js',
-    'main.js',
-    //other
-    'manifest.json',
-   OFFLINE_PAGE,  
-  ]);
-  // サービスワーカー有効化に必須
-  self.addEventListener('fetch', function(event) {});
+const OFFLINE_PAGE = 'index.html';
+workbox.precaching.precacheAndRoute([
+  //icon,ogp
+  'TIME.ico',
+  'icon-192.png',
+  'icon-256.png',
+  //css
+  'style.css',
+  'index.css',
+  //javaScript
+  'js',
+  'main.js',
+  //other
+  'manifest.json',
+  OFFLINE_PAGE,
+]);
+// サービスワーカー有効化に必須
+self.addEventListener('fetch', function (event) { });

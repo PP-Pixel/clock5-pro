@@ -218,6 +218,7 @@ span#clock_time {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -331,6 +332,7 @@ body {
     0% {
         opacity: 0
     }
+
     100% {
         opacity: 1
     }
@@ -340,6 +342,7 @@ body {
     0% {
         opacity: 0
     }
+
     100% {
         opacity: 1
     }
@@ -353,9 +356,11 @@ body {
     body {
         background-color: #000000;
     }
+
     span {
         color: #ffffff;
     }
+
     .one,
     .two,
     .three,
