@@ -5,6 +5,7 @@
   "start_url"         : "https://pp-pixel.github.io/clock5-pro/",
   "id"         : "clock5",
   "display_override": ["fullscreen"],
+  "display_override": ["window-controls-overlay"],
   "display"           : "standalone",
   "background_color"  : "#000000",
   "theme_color"       : "#000000",
