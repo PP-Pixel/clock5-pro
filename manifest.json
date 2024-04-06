@@ -1,6 +1,6 @@
 {
-  "name"              : "Clock5.io",
-  "short_name"        : "Clock5.io",
+  "name"              : "Clock5",
+  "short_name"        : "Clock5",
   "description"       : "Clock v5",
   "start_url"         : "https://pp-pixel.github.io/clock5-pro/",
   "id"         : "clock5",
