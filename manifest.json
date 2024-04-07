@@ -1,7 +1,7 @@
 {
-  "name"              : "Clock5",
-  "short_name"        : "Clock5",
-  "description"       : "Clock v5",
+  "name"              : "Clock Black",
+  "short_name"        : "Clock5(B)",
+  "description"       : "Clock v5 (Black)",
   "start_url"         : "https://pp-pixel.github.io/clock5-pro/",
   "id"         : "clock5",
   "display_override": ["fullscreen"],
